@@ -1,0 +1,63 @@
+[project]
+name = "weather_repository_pattern"
+version = "0.1.0"
+description = "Experimenting with repository pattern"
+readme = "README.md"
+authors = [
+    { name = "David Bambrough", email = "djbambrough@mac.com" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[project.scripts]
+setup-test = "setup_test.__main__:main"
+
+[build-system]
+requires = ["uv_build>=0.9.26,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.14,<0.15",
+    "mypy>=1.19.1,<1.20",
+    "pytest>=9.0.2,<10",
+    "pytest-cov>=7.0.0,<8",
+    "pre-commit>=4.5.1,<5",
+]
+
+# -------------------------
+# Ruff (linting + formatting)
+# -------------------------
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+# Tight but not noisy: correctness, imports, bugs, upgrades.
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+# -------------------------
+# Pytest
+# -------------------------
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+    "slow: slow tests",
+]
+
+# -------------------------
+# MyPy
+# -------------------------
+[tool.mypy]
+python_version = "3.12"
+strict = true
+explicit_package_bases = true
+warn_return_any = true
+show_error_codes = true
+pretty = true
