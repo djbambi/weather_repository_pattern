@@ -1,0 +1,30 @@
+{
+  "lat": 54.9069,
+  "lon": -1.3838,
+  "timezone": "Europe/London",
+  "timezone_offset": 0,
+  "data": [
+    {
+      "dt": 1767830400,
+      "sunrise": 1767860808,
+      "sunset": 1767887826,
+      "temp": 1.94,
+      "feels_like": 1.94,
+      "pressure": 1003,
+      "humidity": 88,
+      "dew_point": 0.17,
+      "clouds": 100,
+      "wind_speed": 0.89,
+      "wind_deg": 299,
+      "wind_gust": 2.24,
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ]
+    }
+  ]
+}
