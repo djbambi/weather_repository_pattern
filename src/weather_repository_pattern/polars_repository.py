@@ -1,8 +1,9 @@
 import json
 
 import polars as pl
-from models import WeatherRecord
-from repository import WeatherRepository
+
+from weather_repository_pattern.models import WeatherRecord
+from weather_repository_pattern.repository import WeatherRepository
 
 
 class PolarsWeatherRepository(WeatherRepository):

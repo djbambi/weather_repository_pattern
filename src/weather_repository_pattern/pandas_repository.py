@@ -1,8 +1,9 @@
 import json
 
 import pandas as pd
-from models import WeatherRecord
-from repository import WeatherRepository
+
+from weather_repository_pattern.models import WeatherRecord
+from weather_repository_pattern.repository import WeatherRepository
 
 
 class PandasWeatherRepository(WeatherRepository):

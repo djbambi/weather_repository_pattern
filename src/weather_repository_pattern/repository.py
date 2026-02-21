@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from models import WeatherRecord
+from weather_repository_pattern.models import WeatherRecord
 
 
 class WeatherRepository(ABC):

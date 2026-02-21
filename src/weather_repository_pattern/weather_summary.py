@@ -1,4 +1,4 @@
-from repository import WeatherRepository
+from weather_repository_pattern.repository import WeatherRepository
 
 
 def weather_summary(repo: WeatherRepository) -> None:

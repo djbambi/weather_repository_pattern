@@ -1,6 +1,6 @@
-from pandas_repository import PandasWeatherRepository
-from polars_repository import PolarsWeatherRepository
-from weather_summary import weather_summary
+from weather_repository_pattern.pandas_repository import PandasWeatherRepository
+from weather_repository_pattern.polars_repository import PolarsWeatherRepository
+from weather_repository_pattern.weather_summary import weather_summary
 
 if __name__ == "__main__":
     # Using pandas
